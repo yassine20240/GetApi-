@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- get axios here -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<!-- models -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="log-in" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="log-in">  log in </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label"> userName </label>
+            <input type="text" class="form-control" id="userId">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">password </label>
+            <input type="number" class="form-control" id="passwordNum">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  onclick="change()">Log-in </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- models -->
+
+    <style>
+        body {
+            background-color: fuchsia;
+        }
+        .custom-container {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <div class="d-flex w-100 justify-content-end">
+                    <button  data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-outline-success mx-3" type="submit">log in </button> 
+                    <button class="btn btn-outline-success" type="submit">log out </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container custom-container" style="height: 500px;">
+    <!-- Post -->
+    <div id="post">
+        <div class="card mt-3">
+            <div class="card-header d-flex align-items-center">
+                <img src="images/images.jpeg" alt="" class="rounded-circle" style="width: 100px; height: 100px;">
+                <samp style="font-size: 2rem; margin-left: 15px;">carlos1</samp>
+            </div>
+            <div class="card-body">
+                <img src="./images/images (1).jpeg" alt="" class="img-fluid" style="width: 100%; height: auto;">
+                <h4 class="c-info mt-2">two minutes ago</h4>
+                <h6>hello world</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolore voluptate nam delectus praesentium voluptates harum assumenda doloribus doloremque, atque voluptatibus animi consequatur voluptas aut incidunt culpa quae.</p>
+                <hr>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-square-fill" viewBox="0 0 16 16">
+                        <path d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895"/>
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99"/>
+                    </svg>
+                    three comments
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
