@@ -1,5 +1,5 @@
 //const { default: axios } = require("axios");
-
+/*
  let url ="https://tarmeezacademy.com/api/v1";
 
 
@@ -82,7 +82,7 @@ getApi()
 
 
 
-
+*/
 
 /*
 
